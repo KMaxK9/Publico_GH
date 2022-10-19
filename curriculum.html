@@ -18,20 +18,18 @@ header {
     box-sizing:border-box;
     border-style:none;
 }
-
 div {
     display: flex;
     align-items:center;
 }
-
 section {
     box-sizing:border-box;
     border-style:none;
+    display:block;
     padding: 10px 10px;
     margin: 5px;
     text-align:left;
-}
-    
+}  
 #conocimientos {
     box-sizing:border-box;
     border-style:none;
@@ -39,25 +37,61 @@ section {
     width:50%;
     padding: 10px 10px;
     margin: 5px;
-    
-}    
+    color:green;
+}   
 aside {
     box-sizing:border-box;
     border-style:none;
-    text-overflow: hide;
     width:50%;
     display:inline-block;
     padding: 2vw 2vw;
 }
-
 h2 {
     font-size: 2vw;
 }
 img {
     margin: 20px;
     border-style: solid;
-    
 }
+/*Apartado idiomas*/
+.al {
+    position:relative;
+    text-align: center;
+}
+.esp {
+    position:relative;
+    text-align: center;
+}
+.ing {
+    position:relative;
+    text-align: center;
+}
+.B_al {
+    position:absolute;
+     top: 50%;
+     left: 7%;
+     transform: translate(-50%, -50%);
+     color:black;
+}
+.B_esp {
+    position:absolute;
+     top: 50%;
+     left: 7%;
+     transform: translate(-50%, -50%);
+     color:black;
+}
+.B_ing {
+    position:absolute;
+     top: 50%;
+     left: 7%;
+     transform: translate(-50%, -50%);
+     color:black;
+}
+/*
+TOP y LEFT: Para darle distancia a esa dirección.
+TRANSFORM: Translate, se utiliza para entrar mejor el texto en relación al vw.
+POSITION: Absoluta (fija, existente, se coloca delante), Relativa (Dependiendo de los elementos de alrededor, se coloca atrás).
+*/
 
 </style>
 </head>
@@ -68,9 +102,9 @@ img {
 
 <!-- Título de la página -->
 <header>   
-    <h1 style="font-size: 30;">Currículum de Jessyl Maximiliian Kögler</h1>
-    <p>En esta página podrán apreciar el currículum de Jessyl Maximilian Kögler de CENEC</p>
-    <hr/>   
+    <h1 style="font-size: 30;"><u>Currículum de Jessyl Maximiliian Kögler</u></h1>
+    <p><mark>En esta página podrán apreciar el currículum de Jessyl Maximilian Kögler de CENEC</mark></p>
+    <hr/>  
 </header>
 <div>
 <!--Imagen-->
@@ -112,18 +146,30 @@ img {
 <section>
 <h2>Idiomas</h2>
 <ul>
-    <li>Alemán nativo</li>
-    <li>Español (Castellano) nativo</li>
-    <li>Inglés C1 Británico</li>
+    <div class="al">
+        <img src="./imagenes/B_Alemania.png" alt="bandera alemania" height="80px" width="150px">
+        <article class="B_al">Alemán nativo</article>
+    </div>
+    <div class="esp">
+        <img src="./imagenes/B_España.jpg" alt="bandera españa" height="80px" width="150px">
+        <article class="B_esp">Español nativo</article>
+    </div>
+    <div class="ing">
+        <img src="./imagenes/B_Inglaterra.png" alt="bandera iglaterra" height="80px" width="150px">
+        <article class="B_ing">Inglés C1 Británico</article>
+    </div>
 </ul>
+<!--
+Utilizamos clases ya que con id no funciona. Metemos el texto en un article y este en un div para poder asignar un estilo agrupado y especifico
+-->
 </section>
 
 <!--Habilidades-->
 <section>
     <h2>Habilidades</h2>
     <ol>
-    <li>Gran desarollo en la programación orientada a objetos.</li>
-    <li>Destreza a trabajar solo al igual que en equipo.</li>
+    <span style="color:violet;"><li>Gran desarollo en la programación orientada a objetos.</li></span>
+    <li><span style="background-color: blue; color:white;">Destreza a trabajar solo al igual que en equipo.</span></li>
     <li>Facilidad de aprender con rápidez.</li>
     </ol>
 </section>
@@ -131,7 +177,7 @@ img {
 <!--Conocimientos-->
 <section id="conocimientos">
     <h2>Conocimientos</h2>
-    <li>1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio exercitationem explicabo ea? Deserunt ipsum dolorum doloribus dolor dolorem repudiandae consequuntur nihil odio. Maiores, explicabo at! </li>
+    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio exercitationem explicabo ea? Deserunt ipsum dolorum doloribus dolor dolorem repudiandae consequuntur nihil odio. Maiores, explicabo at! </li>
     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore accusantium mollitia modi, ut eos nisi sapiente ea consequatur, architecto, officiis repellendus harum beatae iste natus quis? Ad eaque vel a!</li>
 </section>
 </main>  
@@ -142,19 +188,6 @@ img {
 <img src="./imagenes/Heeg.jpg" alt="Certificado prácticas HEEG GmbH" height="400px" width="330px"> 
 <p>Certificado prácticas HEEG GmbH</p>
 </div>
-
-
-<!-- Recursos
-<li><strong></strong></li>
-
--->
-<!-- x --
-</div>
-<h2></h2>
-<ul>
-</ul>
-<div>
--->
 
 </body>
 </html>
