@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+    <!--Jessyl Maximilian Kögler - Trabajo CV-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum de Max Kögler</title>
-</head>
 
 <style>
-article {text-align: center;}
-* {
-    background-color: lightblue;
+   
+body {
+    margin: 2vw;
 }
 
+header {
+    text-align: center;
+    box-sizing:border-box;
+    border-style:none;
+}
+
+div {
+    display: flex;
+    align-items:center;
+}
+
+section {
+    box-sizing:border-box;
+    border-style:none;
+    padding: 10px 10px;
+    margin: 5px;
+    text-align:left;
+}
     
+#conocimientos {
+    box-sizing:border-box;
+    border-style:none;
+    text-overflow: hide;
+    width:50%;
+    padding: 10px 10px;
+    margin: 5px;
+    
+}    
+aside {
+    box-sizing:border-box;
+    border-style:none;
+    text-overflow: hide;
+    width:50%;
+    display:inline-block;
+    padding: 2vw 2vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+img {
+    margin: 20px;
+    border-style: solid;
+    
+}
+
 </style>
+</head>
+
 <body>
 <!-- Header -->
 <a href="index.html">Página Principal</a>
 
-<!-- HTítulo de la página -->
-<article>   
-     <h1 style="font-size: 30;">Currículum de Jessyl Maximiliian Kögler</h1>
+<!-- Título de la página -->
+<header>   
+    <h1 style="font-size: 30;">Currículum de Jessyl Maximiliian Kögler</h1>
     <p>En esta página podrán apreciar el currículum de Jessyl Maximilian Kögler de CENEC</p>
     <hr/>   
-</article>
-
-<!-- Información Personal -->
+</header>
 <div>
+<!--Imagen-->
+<img  src="./imagenes/pers.jpg" alt="Foto personal" width="250px" height="250px" >
+
+<!--Sobre mi-->
+<aside>
+    <h2>Sobre mi</h2>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur fugit enim facere illum, dignissimos quis ab quia laborum aliquam nesciunt sit dolorem omnis aliquid maxime illo quas alias nostrum!
+        </p>
+    </aside>
+</div>
+<!--MAIN-->
+<main>
+<!-- Información Personal -->
+<section>
 <h2>Información personal</h2>
 <ul>
     <li><strong>Nombre completo:</strong> Jessyl Maximilian Kögler. </li>
@@ -35,57 +95,51 @@ article {text-align: center;}
     <li><strong>Edad:</strong> 18 años, nacido en Febrero del año 2004. </li>
     <li><strong>Correo eléctronico:</strong> kmaxkogler@gmail.com </li>
     <li><strong>Teléfono de contacto:</strong> (+34)655443446</li>
-    
 </ul>
-<!--Sobre mi-->
-<div>
-    <h2>Sobre mi</h2>
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur fugit enim facere illum, dignissimos quis ab quia laborum aliquam nesciunt sit dolorem omnis aliquid maxime illo quas alias nostrum!
-        </p>
-    </div>
-    
-</div>
+</section>
 <!-- Información Profesonal -->
-<div>
+<section>
 <h2>Información profesional</h2>
 <ul>
     <li><strong>Estudios realizados:</strong> Bachillerato Científico.</li>
     <li><strong>Centro donde se ha realizado: </strong> I.E.S. Santiago Ramón y Cajal de Fuengirola (Málaga).</li>
-    <li><strong>Prácticas realizadas:</strong> Empresa HEEG - Konstruktion & Maschinenbau GmbH.</li>
+    <li><strong>Prácticas realizadas:</strong> <a target="_blank" href="https://www.heeg-sondermaschinenbau.de/">Empresa HEEG - Konstruktion & Maschinenbau GmbH.</a></li>
     <li><strong>Fecha de realización:</strong> 07 / 2019.</li>
-    
 </ul>
+</section>
+
 <!-- Idiomas -->
-</div>
+<section>
 <h2>Idiomas</h2>
 <ul>
     <li>Alemán nativo</li>
     <li>Español (Castellano) nativo</li>
     <li>Inglés C1 Británico</li>
 </ul>
-<div>
+</section>
 
 <!--Habilidades-->
-<div>
+<section>
     <h2>Habilidades</h2>
-    <li>Gran desarollo en la programación orientada a objetos</li>
-    <li>Destreza a trabajar solo al igual que en equipo</li>
-    <li>Facilidad de aprender con rápidez</li>
-</div>
+    <ol>
+    <li>Gran desarollo en la programación orientada a objetos.</li>
+    <li>Destreza a trabajar solo al igual que en equipo.</li>
+    <li>Facilidad de aprender con rápidez.</li>
+    </ol>
+</section>
 
 <!--Conocimientos-->
-<div>
+<section id="conocimientos">
     <h2>Conocimientos</h2>
-    <li><strong></strong></li>
-    <li><strong></strong></li>
-</div>
-    
+    <li>1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio exercitationem explicabo ea? Deserunt ipsum dolorum doloribus dolor dolorem repudiandae consequuntur nihil odio. Maiores, explicabo at! </li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore accusantium mollitia modi, ut eos nisi sapiente ea consequatur, architecto, officiis repellendus harum beatae iste natus quis? Ad eaque vel a!</li>
+</section>
+</main>  
 
 <!-- Documentación -->
 </div>
 <h2>Documentación adicional</h2>
-<img src="./imagenes/Heeg.jpg" alt="Certificado prácticas HEEG GmbH" height="400px" width="350px"> 
+<img src="./imagenes/Heeg.jpg" alt="Certificado prácticas HEEG GmbH" height="400px" width="330px"> 
 <p>Certificado prácticas HEEG GmbH</p>
 </div>
 
