@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 1vh 3%;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+}
+
+a {
+    height: 1.5em;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    margin: 0.5em 1.5%;
+    padding-top: 0.15em;
+    font-size: x-large;
+    background-color: grey;
+    box-shadow: 3.5px 3px 2px 0 black;
+    border-radius: 0.1em;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+#activo {
+    background-color: lightgrey;
+    box-shadow: 3.5px 3px 2px 0 black inset;
+}
+
+@media screen and (max-width:600px) and (orientation:portrait) {
+    body {
+        background-color: black;
+        color: white;
+    }
+    a {
+        height: 1.5em;
+        width: 20%;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 2px 2px black;
+        margin: 0.5em 1.5%;
+        padding-top: 0.15em;
+        font-size: medium;
+        background-color: grey;
+        box-shadow: 3.5px 3px 2px 0 black;
+        border-radius: 0.1em;
+        color: white;
+}
+}

@@ -1,0 +1,21 @@
+LEYENDA
+Por favor tener en cuenta para los commit's.
+Los "nombres" deberian ser informativos para saber que se ha hecho en el proyecto.
+
+"C-x.x nombre"		//C-1.0 Diagrama Tienda.	Creación Proyect.(Cuando creamos un proyecto Nuevo).	
+"U-x.x nombre"	  	//U-1.2 Entidades.		Update Proyect.  (Cuando actualizamos un proyecto existente).
+"S-x.x.x nombre"	//S-4.2.1 Entidades/Productos.	Snapshot Proyect. (Cuando estás probando cosas nuevas por encima de un Update).
+"R-x.x nombre"		//R-2.0 Diagrama Tienda.	Release Proyect. (Publicación de la nueva versión / Solo cuando se termina el proyecto o se tiene que entregar).
+"E-x nombre-n2"		//E-1 Curriculum-General	Edit Proyect. (Cuando cambias el directorio de algunos archivos, moviendolos de carpeta).
+
+Utilizando la Snapshot como ejemplo.
+- S (primer carácter) significa snapshot (actualización de prueba).
+- 4 (primer número) Versión Principal del proyecto.
+- 2 (segundo número) Actualización Dentro de la versión principal.
+- 1 (tercer número) Nº de Snapshot en el Update que se trabaja.
+
+La Creación deberia ser siempre una versión 1.0 o 0.1.
+Las Actualizaciones deberian de ser contínuas, 1.2 -> 1.3 -> 1.4 -> ... Sin saltarse números.
+Las Snapshots funcionan igual, pero deberían ser trabajadas en pequeña escala y son creadas
+para editar/ probar cosas pequeñas. Un snapshot siempre debe de ser trabajado por encima de un U/C/R.
+Los Release son las versiones finales que se publican. Van por encima de un Update y no suelen contener cambios de la versión Update.
