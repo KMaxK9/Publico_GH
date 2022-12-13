@@ -12,7 +12,11 @@ body {
 nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: lightblue;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 a {
@@ -34,16 +38,39 @@ a:visited {
     color: white;
 }
 
+h1 {
+    text-align: center;
+    margin: 0.5em 1.5%;
+}
+
 #activo {
     background-color: lightgrey;
     box-shadow: 3.5px 3px 2px 0 black inset;
 }
 
-@media screen and (max-width:600px) and (orientation:portrait) {
-    body {
-        background-color: black;
-        color: white;
-    }
+/** IMAGEN PANTALLA **/
+
+#caja {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    object-fit: contain;
+    max-width: fit-content;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*         Ahora me aseguro que el portarretratos no sea mayor
+que la foto más grande
+para evitar el pixelado */
+
+@media screen and (orientation:landscape) {
+
     a {
         height: 1.5em;
         width: 20%;
@@ -52,10 +79,43 @@ a:visited {
         text-shadow: 2px 2px black;
         margin: 0.5em 1.5%;
         padding-top: 0.15em;
-        font-size: medium;
+        font-size: 2vw;
         background-color: grey;
         box-shadow: 3.5px 3px 2px 0 black;
         border-radius: 0.1em;
         color: white;
+    }
+
+    .portaFoto {
+        max-width: 1920px;
+        max-height: 1280px;
+    }
 }
+
+@media screen and (orientation:portrait) {
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    a {
+        height: 1.5em;
+        width: 20%;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 2px 2px black;
+        margin: 0.5em 1.5%;
+        padding-top: 0.15em;
+        font-size: 2vw;
+        background-color: grey;
+        box-shadow: 3.5px 3px 2px 0 black;
+        border-radius: 0.1em;
+        color: white;
+    }
+
+    .portaFoto {
+        max-width: 800px;
+        max-height: 1200px;
+    }
 }

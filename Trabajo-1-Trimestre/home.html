@@ -18,7 +18,70 @@
  <a href="./p2.html">CONTACT</a>
     </nav>
     <header>
-        <h1>Página 1</h1>
+        <h1>BIENVENIDO</h1>
     </header>
+
+    <div class="caja">
+        <picture class="portaFoto">
+    
+            <!--  opciones de imágenes responsivas
+            tamaños (ancho x alto)
+    
+            horizontales   verticales
+    grande    1920*1280      800*1200
+    mediana   1200*800       600*900
+    pequeña   900*600        400*600 
+    
+    Código de identificacion:
+    grandes: rojo
+    medianas: verde
+    pequeñas: azul
+    
+    horizontales: H
+    verticales: V
+    
+    avif: triangulo
+    jpg: circulo
+    heic: cuadrado
+    
+    -->
+    
+            <!-- imágenes GRANDES -->
+
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/heic/hg.heic"
+                type="image/heic" >
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/avif/hg.avif"
+                type="image/avif" >
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/jpg/hg.jpg" type="image/jpg" >
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/heic/vg.heic" type="image/heic" >
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/avif/vg.avif" type="image/avif" >
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/jpg/vg.jpg" type="image/jpg" >
+    
+            <!-- imágenes MEDIANAS -->
+            
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/heic/hm.heic"
+                type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/avif/hm.avif"
+                type="image/avif">
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/jpg/hm.jpg" type="image/jpeg">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/heic/vm.heic" type="image/heic">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/avif/vm.avif" type="image/avif">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/jpg/vm.jpg" type="image/jpg">
+    
+            <!-- imágenes PEQUEÑAS -->
+                
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/heic/hp.heic" type="image/heic">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/avif/hp.avif" type="image/avif">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/jpg/hp.jpg" type="image/jpeg">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/heic/vp.heic" type="image/heic">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/avif/vp.avif" type="image/avif">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/jpg/vp.jpg" type="image/jpg">
+    
+            <img class="laFoto" alt="Foto de un Gato" title="Un paisaje conocido" src="./imagenes/Originales/original.jpg" />
+        </picture>
+</div>
+
+
+
 </body>
 </html>
