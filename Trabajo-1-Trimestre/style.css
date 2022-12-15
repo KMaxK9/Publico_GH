@@ -6,7 +6,14 @@
 
 body {
     margin: 1vh 3%;
+}
 
+header {
+    text-align: center;
+    align-items: center;
+    margin: 2% 2%;
+    padding: 1% 1%;
+    background-color: aquamarine;
 }
 
 nav {
@@ -20,32 +27,103 @@ nav {
 }
 
 a {
-    height: 1.5em;
-    width: 20%;
-    text-align: center;
     text-decoration: none;
-    text-shadow: 2px 2px black;
-    margin: 0.5em 1.5%;
-    padding-top: 0.15em;
-    font-size: x-large;
-    background-color: grey;
-    box-shadow: 3.5px 3px 2px 0 black;
-    border-radius: 0.1em;
-    color: white;
 }
 
 a:visited {
     color: white;
 }
 
+/* TITULOS */
+
 h1 {
     text-align: center;
     margin: 0.5em 1.5%;
 }
 
+h3 {
+    font-size: 300%;
+    font-style: italic;
+}
+
+/* ID's */
+
 #activo {
     background-color: lightgrey;
     box-shadow: 3.5px 3px 2px 0 black inset;
+    color: white;
+}
+
+/* CLASES */
+
+.center {
+    text-align: center;
+}
+
+
+
+.eleccion {
+    padding: 2%;
+    display: inline-block;
+    background-color: aqua;
+    width: 33%;
+    max-height: auto;
+}
+
+.textoHover {
+    display: flex;
+
+    visibility: hidden;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.textoTabla {
+    margin-top: 10%;
+    text-align: center;
+    align-items: center;
+}
+
+.eleccion:hover .textoHover {
+
+    visibility: visible;
+    opacity: 1;
+
+    animation: textoTabla forwards 1.5s ease;
+}
+
+.eleccion:hover .textitos {
+    animation: textoTabla forwards 1.5s ease;
+}
+
+.separadorTabla {
+    margin: 5%;
+}
+
+/* ANIMACIONES */
+
+@keyframes textoTabla {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-3vh);
+    }
+}
+
+@keyframes textoVisible {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /** IMAGEN PANTALLA **/
@@ -71,7 +149,7 @@ para evitar el pixelado */
 
 @media screen and (orientation:landscape) {
 
-    a {
+    .menu {
         height: 1.5em;
         width: 20%;
         text-align: center;
@@ -84,12 +162,18 @@ para evitar el pixelado */
         box-shadow: 3.5px 3px 2px 0 black;
         border-radius: 0.1em;
         color: white;
-    }
+        }
 
     .portaFoto {
         max-width: 1920px;
         max-height: 1280px;
     }
+
+    .tablaEleccion {
+        display: block;
+        flex-direction: row;
+        text-align: center;
+        }
 }
 
 @media screen and (orientation:portrait) {
@@ -99,7 +183,7 @@ para evitar el pixelado */
         color: white;
     }
 
-    a {
+    .menu {
         height: 1.5em;
         width: 20%;
         text-align: center;
@@ -114,8 +198,26 @@ para evitar el pixelado */
         color: white;
     }
 
+    .barraMenu {
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
     .portaFoto {
         max-width: 800px;
         max-height: 1200px;
     }
+
+    .tablaEleccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    .eleccion {
+        width: 100%;
+    }
+    
 }

@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página 1</title>
-    <link href="./style.css" rel="stylesheet"/>
+    <link href="./style.css" rel="stylesheet" />
 </head>
+
 <body>
-    <nav>
- <a id="activo" href="./home.html">HOME</a>
- <a href="./p2.html">PARK</a>
- <a href="./p2.html">BOOKING</a>
- <a href="./home.html">SHOP</a>
- <a href="./p2.html">INFO</a>
- <a href="./p2.html">GALLERY</a>
- <a href="./p2.html">CONTACT</a>
-    </nav>
+    <!-- Común -->
+    <section>
+        <nav class="barraMenu">
+            <a id="activo" class="menu" href="./home.html">HOME</a>
+            <a class="menu" href="./park.html">PARK</a>
+            <a class="menu" href="./p2.html">BOOKING</a>
+            <a class="menu" href="./p2.html">SHOP</a>
+            <a class="menu" href="./p2.html">INFO</a>
+            <a class="menu" href="./p2.html">GALLERY</a>
+            <a class="menu" href="./p2.html">CONTACT</a>
+        </nav>
+    </section>
     <header>
         <h1>BIENVENIDO</h1>
     </header>
 
     <div class="caja">
         <picture class="portaFoto">
-    
+
             <!--  opciones de imágenes responsivas
             tamaños (ancho x alto)
     
@@ -45,43 +50,99 @@
     heic: cuadrado
     
     -->
-    
+
             <!-- imágenes GRANDES -->
 
             <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/heic/hg.heic"
-                type="image/heic" >
+                type="image/heic">
             <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/avif/hg.avif"
-                type="image/avif" >
-            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/jpg/hg.jpg" type="image/jpg" >
-            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/heic/vg.heic" type="image/heic" >
-            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/avif/vg.avif" type="image/avif" >
-            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/jpg/vg.jpg" type="image/jpg" >
-    
+                type="image/avif">
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/jpg/hg.jpg"
+                type="image/jpg">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/heic/vg.heic"
+                type="image/heic">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/avif/vg.avif"
+                type="image/avif">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/jpg/vg.jpg"
+                type="image/jpg">
+
             <!-- imágenes MEDIANAS -->
-            
+
             <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/heic/hm.heic"
                 type="image/heic">
             <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/avif/hm.avif"
                 type="image/avif">
-            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/jpg/hm.jpg" type="image/jpeg">
-            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/heic/vm.heic" type="image/heic">
-            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/avif/vm.avif" type="image/avif">
-            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/jpg/vm.jpg" type="image/jpg">
-    
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/jpg/hm.jpg"
+                type="image/jpeg">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/heic/vm.heic"
+                type="image/heic">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/avif/vm.avif"
+                type="image/avif">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/jpg/vm.jpg"
+                type="image/jpg">
+
             <!-- imágenes PEQUEÑAS -->
-                
-            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/heic/hp.heic" type="image/heic">
-            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/avif/hp.avif" type="image/avif">
-            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/jpg/hp.jpg" type="image/jpeg">
-            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/heic/vp.heic" type="image/heic">
-            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/avif/vp.avif" type="image/avif">
-            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/jpg/vp.jpg" type="image/jpg">
-    
-            <img class="laFoto" alt="Foto de un Gato" title="Un paisaje conocido" src="./imagenes/Originales/original.jpg" />
+
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/heic/hp.heic"
+                type="image/heic">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/avif/hp.avif"
+                type="image/avif">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/jpg/hp.jpg"
+                type="image/jpeg">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/heic/vp.heic"
+                type="image/heic">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/avif/vp.avif"
+                type="image/avif">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/jpg/vp.jpg"
+                type="image/jpg">
+
+            <img class="laFoto" alt="Foto de un Gato" title="Un paisaje conocido"
+                src="./imagenes/Originales/original.jpg" />
         </picture>
-</div>
+    </div>
 
+    <p class="center">Imagen Responsive</p>
 
+    <section class="tablaEleccion">
+        <article class="eleccion">
+            <a href="./park.html">
+                <div class="textoTabla">
+                <div class="textitos">
+                <h3>Ride</h3>
+                <h4>Trail & Dirt</h4>
+                </div>
+                <div class="separadorTabla"></div>
+                <p class="textoHover">Agarra tu bicicleta y vente a nuestro BikePark localizado en la Costa del Sol.</p>
+            </div>
+            </a>
+        </article>
+        <article class="eleccion">
+            <a href="./park.html">
+                <div class="textoTabla">
+                <div class="textitos">
+                <h3>Discover</h3>
+                <h4>Atracciones locales</h4>
+                </div>
+                <div class="separadorTabla"></div>
+                <p class="textoHover">Date una pausa de tanto montar, y unete a una aventura inolvidable.</p>
+                </div>
+            </a>
+        </article>
+        <article class="eleccion">
+            <a href="./park.html">
+                <div class="textoTabla">
+                <div class="textitos">
+                <h3>Relax</h3>
+                <h4>Tenemos piscina</h4>
+                </div>
+                <div class="separadorTabla"></div>
+                <p class="textoHover">Relájate en nuestra casa de vacaciones! Tenemos piscina y un bar privado.</p>
+            </div>
+            </a>
+        </article>
+        <!-- Los p solo se deberian ver cuando hay un hover -->
+    </section>
 
 </body>
+
 </html>
