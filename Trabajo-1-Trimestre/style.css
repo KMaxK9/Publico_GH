@@ -76,14 +76,6 @@ h1 {
 
 /* CLASES HOME */
 
-.bloqueEleccion {
-    padding: 2%;
-    display: inline-block;
-    background-color: darkcyan;
-    max-width: 33%;
-    max-height: auto;
-}
-
 .textoHover {
     display: flex;
 
@@ -237,6 +229,14 @@ img {
         flex-direction: row;
         text-align: center;
     }
+
+    .bloqueEleccion {
+        padding: 2%;
+        display: inline-block;
+        background-color: darkcyan;
+        max-width: 32%;
+        max-height: auto;
+    }
 }
 
 @media screen and (orientation:portrait) {
@@ -276,11 +276,18 @@ img {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        
     }
 
     .bloqueEleccion {
+        padding: 2%;
+        display: inline-block;
+        background-color: darkcyan;
         width: 100%;
+        max-height: auto;
     }
+       
+    
 
     .bloquePark {
         border-color: white;
@@ -306,17 +313,3 @@ img {
 
 }
 
-/* Media Querry de cuando la pantalla es horizontal pero la tabla de "EleccionTabla" no cabe horizontalmente. (en casos de ser menor de 850px)*/
-@media screen and (max-width: 850px) {
-
-    .tablaEleccion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .bloqueEleccion {
-        width: 100%;
-    }
-}
