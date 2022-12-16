@@ -56,9 +56,6 @@ h1 {
 
 .center {
     text-align: center;
-}
-
-.error {
     justify-content: center;
 }
 
@@ -78,7 +75,6 @@ h1 {
 
 .textoHover {
     display: flex;
-
     visibility: hidden;
     text-decoration: none;
     position: relative;
@@ -100,7 +96,6 @@ h1 {
 
     visibility: visible;
     opacity: 1;
-
     animation: textoTabla forwards 1.5s ease;
 }
 
@@ -235,7 +230,7 @@ img {
         display: inline-block;
         background-color: darkcyan;
         max-width: 32%;
-        max-height: auto;
+        height: auto;
     }
 }
 
@@ -276,7 +271,6 @@ img {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        
     }
 
     .bloqueEleccion {
@@ -284,10 +278,8 @@ img {
         display: inline-block;
         background-color: darkcyan;
         width: 100%;
-        max-height: auto;
+        height: auto;
     }
-       
-    
 
     .bloquePark {
         border-color: white;
