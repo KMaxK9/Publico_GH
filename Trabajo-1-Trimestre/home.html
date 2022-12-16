@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1</title>
+    <title>Home</title>
     <link href="./style.css" rel="stylesheet" />
 </head>
 
@@ -15,17 +15,21 @@
         <nav class="barraMenu">
             <a id="activo" class="menu" href="./home.html">HOME</a>
             <a class="menu" href="./park.html">PARK</a>
-            <a class="menu" href="./error.html">BOOKING</a>
+            <a class="menu" href="./error.html">RESERVA</a>
             <a class="menu" href="./error.html">SHOP</a>
+            <a class="menu" target="_blank" href="https://www.lemoi-eventcuisine.es/">BAR</a>
             <a class="menu" href="./error.html">INFO</a>
             <a class="menu" href="./error.html">GALLERY</a>
             <a class="menu" href="./error.html">CONTACT</a>
         </nav>
     </section>
+
+    <!-- Header de Bienvenida -->
     <header>
-        <h1>BIENVENIDO</h1>
+        <h1>BikePark de Max</h1>
     </header>
 
+    <!-- Imagen responsive -->
     <div class="caja">
         <picture class="portaFoto">
 
@@ -53,55 +57,57 @@
 
             <!-- imágenes GRANDES -->
 
-            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/webp/hg.webp" type="image/webp>
-            <source media=" (orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/avif/hg.avif"
-                type="image/avif">
-            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/jpg/hg.jpg"
-                type="image/jpg">
-            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/webp/vg.webp"
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/responsive/webp/hg.webp"
                 type="image/webp">
-            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/avif/vg.avif"
+            <source media=" (orientation: landscape) and (min-width: 1201px)"
+                srcset="./imagenes/responsive/avif/hg.avif" type="image/avif">
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./imagenes/responsive/jpg/hg.jpg"
+                type="image/jpg">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/responsive/webp/vg.webp"
+                type="image/webp">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/responsive/avif/vg.avif"
                 type="image/avif">
-            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/jpg/vg.jpg"
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="./imagenes/responsive/jpg/vg.jpg"
                 type="image/jpg">
 
             <!-- imágenes MEDIANAS -->
 
-            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/webp/hm.webp"
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/responsive/webp/hm.webp"
                 type="image/webp">
-            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/avif/hm.avif"
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/responsive/avif/hm.avif"
                 type="image/avif">
-            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/jpg/hm.jpg"
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="./imagenes/responsive/jpg/hm.jpg"
                 type="image/jpeg">
-            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/webp/vm.webp"
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/responsive/webp/vm.webp"
                 type="image/webp">
-            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/avif/vm.avif"
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/responsive/avif/vm.avif"
                 type="image/avif">
-            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/jpg/vm.jpg"
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="./imagenes/responsive/jpg/vm.jpg"
                 type="image/jpg">
 
             <!-- imágenes PEQUEÑAS -->
 
-            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/webp/hp.webp"
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/responsive/webp/hp.webp"
                 type="image/webp">
-            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/avif/hp.avif"
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/responsive/avif/hp.avif"
                 type="image/avif">
-            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/jpg/hp.jpg"
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="./imagenes/responsive/jpg/hp.jpg"
                 type="image/jpeg">
-            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/webp/vp.webp"
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/responsive/webp/vp.webp"
                 type="image/webp">
-            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/avif/vp.avif"
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/responsive/avif/vp.avif"
                 type="image/avif">
-            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/jpg/vp.jpg"
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="./imagenes/responsive/jpg/vp.jpg"
                 type="image/jpg">
 
-            <img class="laFoto" alt="Foto de un Gato" title="Un paisaje conocido"
+            <img class="laFoto" alt="Foto 2 bicicletas" title="Un paisaje conocido"
                 src="./imagenes/Originales/original.jpg" />
         </picture>
     </div>
-
     <p class="center">Imagen Responsive</p>
+    <div class="separador"></div>
 
+    <!-- Tabla con tres bloues (Ride , Discover , Relax) -->
     <section class="tablaEleccion">
         <article class="bloqueEleccion">
             <a href="./park.html">
@@ -111,7 +117,8 @@
                         <h4>Trail & Dirt</h4>
                     </div>
                     <div class="separador"></div>
-                    <p class="textoHover">Agarra tu bicicleta y vente a nuestro BikePark localizado en la Costa del Sol.
+                    <p class="textoHover">
+                        Agarra tu bicicleta y vente a nuestro BikePark localizado en la Costa del Sol.
                     </p>
                 </div>
             </a>
@@ -124,7 +131,9 @@
                         <h4>Atracciones locales</h4>
                     </div>
                     <div class="separador"></div>
-                    <p class="textoHover">Date una pausa de tanto montar, y unete a una aventura inolvidable.</p>
+                    <p class="textoHover">
+                        Date una pausa de tanto montar, y unete a una aventura inolvidable.
+                    </p>
                 </div>
             </a>
         </article>
@@ -136,17 +145,68 @@
                         <h4>Tenemos piscina</h4>
                     </div>
                     <div class="separador"></div>
-                    <p class="textoHover">Relájate en nuestra casa de vacaciones! Tenemos piscina y un bar privado.</p>
+                    <p class="textoHover">
+                        Relájate en nuestra casa de vacaciones! Tenemos piscina y un bar privado.
+                    </p>
                 </div>
             </a>
         </article>
     </section>
 
-    <section>
-        <article>
-            <p class="center">Como esta página web aún está en desarrollo faltan un montón de cosas y funciones.</p>
+    <div class="separador"></div>
+
+    <!-- Tabla Málaga -->
+    <section class="tablas">
+        <article class="bloqueHome">
+            <img src="./imagenes/Home/malaga.jpg" alt="Foto de Fuengirola">
+        </article>
+        <div class="bloqueHome">
+            <article>
+                <h3>Bienvenido a Málaga</h3>
+                <h4>-----------------------------------------</h4>
+                <div class="separador"></div>
+            </article>
+            <article>
+                <p>
+                    Te damos la bienvenida a la preciosa Málaga, con sus preciosas playas y sus salvajes paisajes
+                    montañosos. Hacemos escursiones por toda la costa, lo único que tienes que hacer es contactar con
+                    nosotros y te planificaremos el mejor tour para ti y tu bicicleta. Reserva una excusión y trae a
+                    todos tus amigos. Y no olvides... Let's Ride!
+                </p>
+            </article>
+        </div>
+
+
+    </section>
+    <hr>
+
+    <!-- Tabla infoPark -->
+    <section class="tablas">
+
+        <div class="bloqueHome">
+            <article>
+                <h3>Nuestro BikePark</h3>
+                <h4>-----------------------------------------</h4>
+                <div class="separador"></div>
+            </article>
+            <article>
+                <p>
+                    Vente a nuestro campillo! Es totalmente gratis! Lo único que tienes que hacer es reservar una plaza
+                    y venirte con tus amigos y bicicleta. Aquí hay saltos, peraltes, curvas, pumptrack y un bar privado.
+                    Todo lo que el corazón desea para un día perfecto en bicicleta.
+                </p>
+            </article>
+        </div>
+        <article class="bloqueHome">
+            <img src="./imagenes/home/pista.jpg" alt="Foto de un campo">
         </article>
     </section>
+    <hr>
+
+    <!-- Texto incomplete -->
+    <footer>
+        <p class="center">Como esta página web aún está en desarrollo faltan un montón de cosas y funciones.</p>
+    </footer>
 
 </body>
 

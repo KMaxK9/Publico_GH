@@ -30,6 +30,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 a:visited {
@@ -41,11 +42,6 @@ a:visited {
 h1 {
     text-align: center;
     margin: 0.5em 1.5%;
-}
-
-h3 {
-    font-size: 300%;
-    font-style: italic;
 }
 
 /* ID's */
@@ -70,13 +66,21 @@ h3 {
     margin: 5%;
 }
 
+.tablas {
+    display: flex;
+    padding: 2%;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /* CLASES HOME */
 
 .bloqueEleccion {
     padding: 2%;
     display: inline-block;
-    background-color: aqua;
-    width: 33%;
+    background-color: darkcyan;
+    max-width: 33%;
     max-height: auto;
 }
 
@@ -98,6 +102,8 @@ h3 {
     align-items: center;
 }
 
+/* Pseudoclases */
+
 .bloqueEleccion:hover .textoHover {
 
     visibility: visible;
@@ -110,38 +116,53 @@ h3 {
     animation: textoTabla forwards 1.5s ease;
 }
 
+/* TABLAS DESCRIPTIVAS HOME */
 
+.bloqueHome {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    padding: 1%;
+    margin: 1%;
+    max-width: 40%;
+    height: 15%;
+    border: 5px solid black;
+    overflow: hidden;
+    align-items: center;
+    justify-self: center;
+}
 
 /* CLASES PARK */
 
 .bloquePark {
     display: flex;
+    flex-direction: column;
+    display: inline-block;
     padding: 1%;
     margin: 1%;
-    display: inline-block;
     max-width: 30%;
     height: 20%;
     border: 5px solid black;
-    overflow:hidden;
-    
-    }
-
-.tablaPark {
-    display: flex;
-    padding: 2%;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-
-.bloquePark {
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
     align-items: center;
     justify-self: center;
 }
 
+/*  CLASES MAPA */
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: auto;
+    width: auto;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: auto;
+    width: auto;
+}
 
 /* ANIMACIONES */
 
@@ -156,11 +177,11 @@ h3 {
 }
 
 @keyframes textoVisible {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: 1;
     }
 }
@@ -182,11 +203,14 @@ img {
     height: auto;
 }
 
-/*         Ahora me aseguro que el portarretratos no sea mayor
-que la foto más grande
-para evitar el pixelado */
+/* Media querrys para las imagenes responsive y la adaptación con la pantalla horizontal / vertical. */
 
 @media screen and (orientation:landscape) {
+
+    h3 {
+        font-size: 300%;
+        font-style: italic;
+    }
 
     .menu {
         height: 1.5em;
@@ -252,7 +276,6 @@ para evitar el pixelado */
         flex-direction: column;
         align-items: center;
         text-align: center;
-
     }
 
     .bloqueEleccion {
@@ -263,12 +286,37 @@ para evitar el pixelado */
         border-color: white;
     }
 
-    .h3Vert {
-        font-size: 100%;
+    .bloqueHome {
+        border-color: white;
+    }
+
+    .h3 {
+        font-size: 130%;
         font-style: italic;
     }
 
-    .h4Vert {
-        font-size: 70%;
+    h4 {
+        font-size: 80%;
+    }
+
+    #gmap_canvas {
+        height: 250px;
+        width: 250px;
+    }
+
+}
+
+/* Media Querry de cuando la pantalla es horizontal pero la tabla de "EleccionTabla" no cabe horizontalmente. (en casos de ser menor de 850px)*/
+@media screen and (max-width: 850px) {
+
+    .tablaEleccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bloqueEleccion {
+        width: 100%;
     }
 }

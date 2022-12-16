@@ -15,20 +15,23 @@
         <nav class="barraMenu">
             <a class="menu" href="./home.html">HOME</a>
             <a id="activo" class="menu" href="./park.html">PARK</a>
-            <a class="menu" href="./error.html">BOOKING</a>
+            <a class="menu" href="./error.html">RESERVA</a>
             <a class="menu" href="./error.html">SHOP</a>
+            <a class="menu" target="_blank" href="https://www.lemoi-eventcuisine.es/">BAR</a>
             <a class="menu" href="./error.html">INFO</a>
             <a class="menu" href="./error.html">GALLERY</a>
             <a class="menu" href="./error.html">CONTACT</a>
         </nav>
     </section>
 
+    <!-- Header de Bienvenida -->
     <header>
         <h2>BIENVENIDO AL PARQUE</h2>
     </header>
 
+    <!-- Lo importante de esta página -->
     <main>
-        <p>
+        <p class="center">
             Te damos la bienvenida al parque! <br>Este actualmente se encuentra cerrado por el tiempo atmosférico.
             <br><br>
             También está bajo contrucción y mantenimiento, más abajo podrás ver algunas imágenes del Parque
@@ -38,11 +41,12 @@
         <hr>
     </main>
 
-    <section class="tablaPark">
+    <!-- Tabla de la planificación -->
+    <section class="tablas">
         <div class="bloquePark">
             <article>
-                <h3 class="h3Vert">Planificación</h3>
-                <h4 class="h4Vert">La planificación del BikePark para el año 2023.</h4>
+                <h3>Planificación</h3>
+                <h4>La planificación del BikePark para el año 2023.</h4>
                 <div class="separador"></div>
             </article>
             <article>
@@ -57,15 +61,17 @@
 
     </section>
     <hr>
-    <section class="tablaPark">
+
+    <!-- Tabla de la Construcción -->
+    <section class="tablas">
 
         <article class="bloquePark">
             <img src="./imagenes/park/underConstruction/jump1.jpg" alt="DirtJumps.">
         </article>
         <div class="bloquePark">
-            <article>
-                <h3 class="h3Vert">Construcción</h3>
-                <h4 class="h4Vert">Los DirtJumps al final del BikePark.</h4>
+            <article class="subBloquePark">
+                <h3>Construcción</h3>
+                <h4>Los DirtJumps al final del BikePark.</h4>
                 <div class="separador"></div>
             </article>
             <article>
@@ -78,6 +84,34 @@
         </div>
     </section>
     <hr>
+
+    <!-- SECCION DEL LUGAR (MAPA) -->
+    <section class="tablas">
+        <article class="bloquePark">
+            <h3>¿Cómo llegar?</h3>
+            <p>Estamos localizados en la urbanización de El Faro cerca de Fuengirola.<br>A 30 minutos en coche del
+                aeropuerto de Málaga.</p>
+        </article>
+
+        <!-- Mapa sacado de: "https://google-map-generator.com/" -->
+        <article  class="mapouter">
+            <div class="gmap_canvas">
+                <iframe id="gmap_canvas" width="600" height="500"
+                    src="https://maps.google.com/maps?q=Restaurante%20%22Le%20Moi%22%20EventCuisine&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <a href="https://123movies-to.org"></a><br>
+                <a href="https://www.embedgooglemap.net">get google map embed code</a>
+            </div>
+    </article>
+    </section>
+    <hr>
+
+    <!-- Texto incomplete -->
+    <footer>
+        <p class="center">Como esta página web aún está en desarrollo faltan un montón de cosas y funciones.</p>
+    </footer>
+
 </body>
 
 </html>
