@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+    z-index: 0;
+
+    transition: all 1s ease;
+}
+
+div {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+
+    transition: all 1s ease;
+}
+
+p {
+    font-size: calc(2em + 1vw + 1vh);
+    color: aqua;
+    text-shadow: 5% white;
+    background-color: transparent;
+
+    z-index: 2;
+}
+
+div:hover, div:active {
+    opacity: 1;
+    background-color: rgba(96, 96, 96, 0.397);
+    animation: texto 2s timing-function ease;
+}
+
+@media all and (orientatiom:portrait) {
+
+    img, div {
+        width: 70%;
+
+    }
+}
