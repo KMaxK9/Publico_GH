@@ -8,32 +8,38 @@
 body {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    justify-content: center;
 }
 
 img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
+    justify-content: center;
+   
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    overflow: hidden;
+    object-fit: contain;
+    object-position: 50% 50%;
 
     z-index: 0;
 
-    transition: all 1s ease;
+    
 }
 
 div {
     opacity: 0;
+    top: 0%;
+    left: 0%;
     display: flex;
     flex-direction: column;
     position: absolute;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    
     width: 100%;
     height: 100%;
+    background-color: transparent;
+
 
     z-index: 1;
 
@@ -41,24 +47,33 @@ div {
 }
 
 p {
+    text-align: center;
     font-size: calc(2em + 1vw + 1vh);
     color: aqua;
-    text-shadow: 5% white;
-    background-color: transparent;
-
+    text-shadow: 1.5px 1.5px white;
+    
+    transition: all 1s ease;
     z-index: 2;
+}
+
+:nth-child(1) {
+    color:red;
+}
+
+:nth-child(3) {
+    color:green;
+    text-shadow: 1.5px 1.5px gold;
 }
 
 div:hover, div:active {
     opacity: 1;
-    background-color: rgba(96, 96, 96, 0.397);
-    animation: texto 2s timing-function ease;
+    background-color: rgba(47, 47, 47, 0.397);
 }
 
 @media all and (orientatiom:portrait) {
 
     img, div {
-        width: 70%;
-
+        width: 75%;
+        
     }
 }
