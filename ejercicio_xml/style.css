@@ -1,0 +1,41 @@
+
+body {
+	counter-reset: estrofa;
+}
+
+h1{
+	text-align: center;
+	text-decoration: underline;
+}
+
+div {
+	padding-left: 30px;
+}
+
+h3{
+	counter-reset: linea;
+	color: blue;
+}
+
+h3::after {
+	counter-increment: estrofa;
+	content: counter(estrofa);
+}
+
+h2{
+	padding: 10px;
+	color: white;
+	background-color: black;
+}
+
+p::before {
+	counter-increment: linea;
+	content: counter(estrofa) "." counter(linea) " - ";
+}
+
+span {
+	font-style: italic;
+	font-size: 10px;
+	color: grey;
+}
+

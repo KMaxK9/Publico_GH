@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="london.xsl"?>
+
+<cancion  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="london.xsd">
+	<titulo>The London Air Raids</titulo>
+	<autor>Vian Izak</autor>
+	<letra>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>And we sit here so close in the dark</verso>
+			<verso>And we're so close to being torn apart</verso>
+			<verso>Every crash I can feel in our foundation</verso>
+			<verso>It runs through my veins and I hate the sensation</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>But I know that I'm safe here with you</verso>
+			<verso>'Cause we made it through everything, the old and the new</verso>
+			<verso>Just wake me up when all this is over</verso>
+			<verso>Wake me up and tell me it's not true</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>My sweet love, watch the air raids</verso>
+			<verso>As the streets of London are not safe</verso>
+			<verso>I wish that we could escape</verso>
+			<verso>As the beat of the drum keeps on its play</verso>
+			<verso>I long to feel the rain on my face</verso>
+			<verso>So I wait, I want the bombs to fade away</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>And the hum of the airplanes is such a sweet sound</verso>
+			<verso>As we're coming up from underground</verso>
+			<verso>Coming up to see our ruined state</verso>
+			<verso>Coming up to see those ruins that you made</verso>
+		</estrofa>
+		<estrofa>
+			   <tipo>normal</tipo>
+			<verso>And in the east, I hear a nation shout</verso>
+			<verso>And we wait for the day when we can sing it out</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>My sweet love, watch the air raids</verso>
+			<verso>As the streets of London are not safe</verso>
+			<verso>I wish that we could escape</verso>
+			<verso>As the beat of the drum keeps on its play</verso>
+			<verso>I long to feel the rain on my face</verso>
+			<verso>So I wait, I want the bombs to fade away</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>My sweet love, watch the air raids</verso>
+			<verso>As the streets of London are not safe</verso>
+			<verso>I wish that we could escape</verso>
+			<verso>As the beat of the drum keeps on its play</verso>
+			<verso>I long to feel the rain on my face</verso>
+			<verso>So I wake</verso>
+		</estrofa>
+	</letra>
+</cancion>
