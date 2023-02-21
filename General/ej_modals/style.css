@@ -1,0 +1,86 @@
+/* Elementos estáticos de la página */
+
+body {
+padding: 10px;
+background-color: rgba(128, 128, 128, 0.3);
+}
+
+header {
+	text-align: center;
+}
+
+h1{
+	text-decoration: underline;
+}
+
+/* El Modal */
+#modal {
+	display: none;
+  	position: fixed;
+  	left: 0;
+  	top: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-color: rgb(0, 0, 0);
+  	background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* El contenido del Modal */
+#content {
+	position: sticky;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+	padding: 0;
+	outline: 0;
+	border: 1px #777 solid;
+	width: 35%;
+	top: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),0 -4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+	/* Animación */
+	animation-name: example;
+	animation-duration: 0.5s;
+}
+
+/* El botón para abrir el modal */
+.button {
+	display: flex;
+	justify-content: center;
+}
+
+/* El texto del botón */
+#click {
+	text-decoration: none;
+	color: black;
+	width: 150px;
+	text-align: center;
+	background-color: aquamarine;
+	padding: 10px;
+}
+
+/* X para cerrar el modal */
+.close {
+	text-decoration: none;
+	float: right;
+	margin-right:10px;
+	font-size: 35px;
+	color: black;
+}
+
+/* Elementos móviles de la página */
+
+/* Target */
+#modal:target {
+	display: table;
+}
+
+/* Animación */
+
+@keyframes example {
+	from {top:-100px;opacity: 0;}
+	to {top:50%;opacity:1;}
+  }
+
+  
+
+
