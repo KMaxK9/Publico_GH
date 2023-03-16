@@ -23,7 +23,7 @@
 				</xsl:for-each>
 					<br/>
 				
-				<h2>Autor: <xsl:value-of select="cancion/titulo"/></h2>
+				<h2>Autor: <xsl:value-of select="cancion/autor"/></h2>
 				
 			</body>
 		</html>
