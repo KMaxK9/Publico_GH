@@ -10,7 +10,7 @@
         </xs:complexType>
     </xs:element>
     <xs:element name="titulo" type="xs:string"/>
-    <xs:element name="autor" type="xs:NCName"/>
+    <xs:element name="autor" type="xs:string"/>
     <xs:element name="letra">
         <xs:complexType>
             <xs:sequence>
