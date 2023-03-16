@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="london.xsl"?>
+
+<cancion  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="realfriends.xsd">
+	<titulo>Real Friends (acortado)</titulo>
+	<autor>Ye</autor>
+	<letra>
+		<estrofa>
+			<verso>AI found myself in a late night drives</verso>
+			<verso>Without a destination</verso>
+			<verso>All I had were thoughts about the past</verso>
+		</estrofa>
+		<estrofa>
+			<verso>And a list of my favorite songs to keep me company</verso>
+			<verso>But I still struggle and lose myself everyday</verso>
+			<verso>I always find myself lost in every line of all these songs</verso>
+			<verso>But I felt better when I saw that this is life</verso>
+		</estrofa>
+		<estrofa>
+			<verso>And in life were gonna cry</verso>
+			<verso>In life were gonna lose sleep</verso>
+			<verso>Were gonna feel helpless</verso>
+		</estrofa>
+		<estrofa>
+			<verso>But thats how its got to be [x9]</verso>
+			<verso>When you lose yourself you'll find what you're looking for</verso>
+			<verso>I'm growing past who I used to be</verso>
+		</estrofa>		
+	</letra>
+
+
