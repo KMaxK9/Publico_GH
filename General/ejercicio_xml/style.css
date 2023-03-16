@@ -25,7 +25,7 @@ h3::after {
 h2{
 	padding: 10px;
 	color: white;
-	background-color: black;
+	background-color: green;
 }
 
 p::before {
