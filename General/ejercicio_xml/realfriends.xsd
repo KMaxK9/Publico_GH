@@ -21,9 +21,11 @@
     <xs:element name="estrofa">
         <xs:complexType>
             <xs:sequence>
+                <xs:element ref="tipo"/>
                 <xs:element maxOccurs="unbounded" ref="verso"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:element name="tipo" type="xs:integer"/>
     <xs:element name="verso" type="xs:string"/>
 </xs:schema>
